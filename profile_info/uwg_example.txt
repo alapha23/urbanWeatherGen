@@ -1,0 +1,171 @@
+
+Reading uwg file input.
+
+Simulating new temperature and humidity values for 31 days from 12/1.
+
+New climate file 'SGP_Singapore.486980_IWEC_UWG.epw' is generated at /home/gao/Documents/urbanWeatherGen/resources/epw_uwg.
+         6968835 function calls (6968754 primitive calls) in 7.226 seconds
+
+   Ordered by: cumulative time
+
+   ncalls  tottime  percall  cumtime  percall filename:lineno(function)
+        1    0.003    0.003    7.226    7.226 UWG/UWG.py:802(run)
+        1    0.298    0.298    7.005    7.005 UWG/UWG.py:611(simulate)
+     8928    0.508    0.000    3.414    0.000 UWG/RSMDef.py:148(VDM)
+     8928    0.195    0.000    2.531    0.000 UWG/RSMDef.py:235(DiffusionCoefficient)
+     8928    1.684    0.000    2.113    0.000 UWG/RSMDef.py:277(DissipationBougeault)
+     8928    0.400    0.000    2.063    0.000 UWG/urbflux.py:4(urbflux)
+    53568    0.180    0.000    1.140    0.000 UWG/element.py:90(SurfFlux)
+    71424    0.741    0.000    1.122    0.000 UWG/element.py:187(Conduction)
+    17856    0.337    0.000    0.574    0.000 UWG/building.py:124(BEMCalc)
+  1243129    0.324    0.000    0.380    0.000 UWG/RSMDef.py:127(is_near_zero)
+    71424    0.334    0.000    0.334    0.000 UWG/element.py:297(invert)
+     8928    0.187    0.000    0.310    0.000 UWG/RSMDef.py:202(DiffusionEquation)
+     8928    0.144    0.000    0.227    0.000 UWG/UBLDef.py:46(UBLModel)
+     8928    0.176    0.000    0.190    0.000 UWG/UCMDef.py:141(UCModel)
+     8928    0.141    0.000    0.189    0.000 UWG/RSMDef.py:335(LengthBougeault)
+     8928    0.087    0.000    0.186    0.000 UWG/solarcalcs.py:35(solarcalcs)
+     8928    0.122    0.000    0.122    0.000 UWG/RSMDef.py:351(invert)
+        1    0.080    0.080    0.119    0.119 UWG/UWG.py:770(write_epw)
+   437362    0.116    0.000    0.116    0.000 {method 'format' of 'str' objects}
+    18600    0.049    0.000    0.108    0.000 UWG/psychrometrics.py:3(psychrometrics)
+     8928    0.013    0.000    0.105    0.000 UWG/solarcalcs.py:22(__init__)
+     8930    0.007    0.000    0.091    0.000 /usr/lib/python2.7/logging/__init__.py:1567(getLogger)
+   648067    0.090    0.000    0.090    0.000 {max}
+     8930    0.018    0.000    0.085    0.000 /usr/lib/python2.7/logging/__init__.py:1025(getLogger)
+    62496    0.027    0.000    0.084    0.000 /usr/lib/python2.7/logging/__init__.py:1145(debug)
+   101161    0.048    0.000    0.082    0.000 /usr/lib/python2.7/logging/__init__.py:1360(isEnabledFor)
+     4464    0.059    0.000    0.077    0.000 UWG/solarcalcs.py:134(solarangles)
+        1    0.000    0.000    0.077    0.077 UWG/UWG.py:440(init_input_obj)
+    20832    0.021    0.000    0.071    0.000 /usr/lib/python2.7/copy.py:66(copy)
+  1436140    0.069    0.000    0.069    0.000 {abs}
+   380191    0.062    0.000    0.062    0.000 {math.pow}
+    26784    0.058    0.000    0.058    0.000 UWG/infracalcs.py:1(infracalcs)
+   395064    0.056    0.000    0.056    0.000 {math.log}
+   107136    0.043    0.000    0.050    0.000 UWG/element.py:87(is_near_zero)
+        3    0.044    0.015    0.048    0.016 {cPickle.load}
+    18600    0.030    0.000    0.045    0.000 UWG/psychrometrics.py:50(saturation_pressure)
+     5297    0.043    0.000    0.043    0.000 UWG/UBLDef.py:109(NightForc)
+       13    0.042    0.003    0.043    0.003 {map}
+        3    0.000    0.000    0.043    0.014 UWG/utilities.py:14(read_csv)
+    38665    0.015    0.000    0.040    0.000 /usr/lib/python2.7/logging/__init__.py:1157(info)
+   316947    0.039    0.000    0.039    0.000 {min}
+    17832    0.020    0.000    0.038    0.000 /usr/lib/python2.7/logging/__init__.py:1623(info)
+   101161    0.034    0.000    0.034    0.000 /usr/lib/python2.7/logging/__init__.py:1346(getEffectiveLevel)
+     8933    0.006    0.000    0.033    0.000 /usr/lib/python2.7/logging/__init__.py:205(_acquireLock)
+   459768    0.033    0.000    0.033    0.000 {math.sqrt}
+     2977    0.019    0.000    0.029    0.000 /usr/lib/python2.7/copy.py:306(_reconstruct)
+        1    0.001    0.001    0.028    0.028 UWG/weather.py:26(__init__)
+    17856    0.014    0.000    0.028    0.000 UWG/building.py:114(__repr__)
+     8933    0.019    0.000    0.027    0.000 /usr/lib/python2.7/threading.py:147(acquire)
+     8933    0.006    0.000    0.025    0.000 /usr/lib/python2.7/logging/__init__.py:214(_releaseLock)
+     8928    0.014    0.000    0.021    0.000 UWG/simparam.py:59(UpdateDate)
+        1    0.000    0.000    0.021    0.021 UWG/UWG.py:202(read_epw)
+     8933    0.015    0.000    0.019    0.000 /usr/lib/python2.7/threading.py:187(release)
+    34278    0.016    0.000    0.019    0.000 UWG/UWG.py:199(is_near_zero)
+   145247    0.012    0.000    0.012    0.000 {len}
+     2977    0.012    0.000    0.012    0.000 {method '__reduce_ex__' of 'object' objects}
+   160320    0.011    0.000    0.011    0.000 {method 'append' of 'list' objects}
+    17858    0.008    0.000    0.009    0.000 UWG/building.py:121(is_near_zero)
+    35756    0.009    0.000    0.009    0.000 {isinstance}
+    49104    0.008    0.000    0.008    0.000 {math.cos}
+    17856    0.007    0.000    0.007    0.000 UWG/psychrometrics.py:61(moist_air_density)
+    13439    0.006    0.000    0.006    0.000 {range}
+     9300    0.005    0.000    0.005    0.000 UWG/simparam.py:56(is_near_zero)
+    31248    0.004    0.000    0.004    0.000 {math.sin}
+       30    0.002    0.000    0.004    0.000 UWG/utilities.py:26(str2fl)
+     8137    0.004    0.000    0.004    0.000 {built-in method __new__ of type object at 0x559bd21a8bc0}
+     8931    0.004    0.000    0.004    0.000 {method 'acquire' of 'thread.lock' objects}
+     2977    0.004    0.000    0.004    0.000 {method 'update' of 'dict' objects}
+    23934    0.004    0.000    0.004    0.000 {method 'get' of 'dict' objects}
+     5160    0.001    0.000    0.004    0.000 /home/gao/Documents/urbanWeatherGen/lib/python2.7/copy_reg.py:46(_reconstructor)
+    17866    0.003    0.000    0.003    0.000 /usr/lib/python2.7/threading.py:64(_note)
+    19344    0.003    0.000    0.003    0.000 {math.exp}
+     5954    0.003    0.000    0.003    0.000 {getattr}
+     2977    0.001    0.000    0.003    0.000 /home/gao/Documents/urbanWeatherGen/lib/python2.7/copy_reg.py:92(__newobj__)
+    17866    0.002    0.000    0.002    0.000 {thread.get_ident}
+     8304    0.002    0.000    0.002    0.000 UWG/utilities.py:32(helper_to_fl)
+    17856    0.002    0.000    0.002    0.000 /usr/lib/python2.7/copy.py:101(_copy_immutable)
+     8768    0.002    0.000    0.002    0.000 {method 'write' of 'file' objects}
+     8931    0.002    0.000    0.002    0.000 {method 'release' of 'thread.lock' objects}
+     8928    0.002    0.000    0.002    0.000 {math.floor}
+     8929    0.002    0.000    0.002    0.000 {math.ceil}
+     4464    0.001    0.000    0.001    0.000 {math.tan}
+     4464    0.001    0.000    0.001    0.000 {math.acos}
+     2982    0.001    0.000    0.001    0.000 {hasattr}
+     2119    0.001    0.000    0.001    0.000 UWG/UBLDef.py:43(is_near_zero)
+      744    0.001    0.000    0.001    0.000 UWG/psychrometrics.py:69(HumFromRHumTemp)
+     4464    0.001    0.000    0.001    0.000 {math.asin}
+    17656    0.001    0.000    0.001    0.000 UWG/utilities.py:19(<lambda>)
+        2    0.000    0.000    0.001    0.000 UWG/RSMDef.py:39(__init__)
+        1    0.000    0.000    0.000    0.000 UWG/UWG.py:391(set_input)
+        1    0.000    0.000    0.000    0.000 UWG/UWG.py:254(read_input)
+     3104    0.000    0.000    0.000    0.000 {id}
+        7    0.000    0.000    0.000    0.000 {open}
+        7    0.000    0.000    0.000    0.000 {method 'close' of 'file' objects}
+     82/1    0.000    0.000    0.000    0.000 /usr/lib/python2.7/copy.py:145(deepcopy)
+        2    0.000    0.000    0.000    0.000 UWG/RSMDef.py:130(load_z_meso)
+        1    0.000    0.000    0.000    0.000 /usr/lib/python2.7/copy.py:253(_deepcopy_dict)
+        8    0.000    0.000    0.000    0.000 {reduce}
+        1    0.000    0.000    0.000    0.000 UWG/UWG.py:100(__init__)
+        2    0.000    0.000    0.000    0.000 UWG/forcing.py:23(__init__)
+        7    0.000    0.000    0.000    0.000 /home/gao/Documents/urbanWeatherGen/lib/python2.7/genericpath.py:23(exists)
+        3    0.000    0.000    0.000    0.000 UWG/UWG.py:306(<lambda>)
+       16    0.000    0.000    0.000    0.000 UWG/UWG.py:311(<lambda>)
+        1    0.000    0.000    0.000    0.000 UWG/UBLDef.py:25(__init__)
+        4    0.000    0.000    0.000    0.000 /usr/lib/python2.7/copy.py:226(_deepcopy_list)
+        7    0.000    0.000    0.000    0.000 {posix.stat}
+        3    0.000    0.000    0.000    0.000 UWG/element.py:39(__init__)
+        1    0.000    0.000    0.000    0.000 /usr/lib/python2.7/logging/__init__.py:1507(basicConfig)
+        2    0.000    0.000    0.000    0.000 UWG/UWG.py:813(procMat)
+      195    0.000    0.000    0.000    0.000 {method 'replace' of 'str' objects}
+      152    0.000    0.000    0.000    0.000 UWG/UWG.py:787(<lambda>)
+        3    0.000    0.000    0.000    0.000 UWG/utilities.py:5(zeros)
+       38    0.000    0.000    0.000    0.000 /usr/lib/python2.7/copy.py:267(_keep_alive)
+       11    0.000    0.000    0.000    0.000 /home/gao/Documents/urbanWeatherGen/lib/python2.7/posixpath.py:61(join)
+        1    0.000    0.000    0.000    0.000 /usr/lib/python2.7/logging/__init__.py:827(__init__)
+        1    0.000    0.000    0.000    0.000 /usr/lib/python2.7/logging/__init__.py:665(__init__)
+        3    0.000    0.000    0.000    0.000 /usr/lib/python2.7/logging/__init__.py:1071(_fixupParents)
+        1    0.000    0.000    0.000    0.000 UWG/UCMDef.py:76(__init__)
+        3    0.000    0.000    0.000    0.000 /usr/lib/python2.7/logging/__init__.py:1127(__init__)
+        5    0.000    0.000    0.000    0.000 /home/gao/Documents/urbanWeatherGen/lib/python2.7/copy_reg.py:95(_slotnames)
+        8    0.000    0.000    0.000    0.000 {sum}
+        1    0.000    0.000    0.000    0.000 /usr/lib/python2.7/copy.py:234(_deepcopy_tuple)
+        1    0.000    0.000    0.000    0.000 UWG/simparam.py:28(__init__)
+        1    0.000    0.000    0.000    0.000 UWG/UWG.py:603(hvac_autosize)
+      112    0.000    0.000    0.000    0.000 {method 'split' of 'str' objects}
+      112    0.000    0.000    0.000    0.000 {method 'join' of 'str' objects}
+        1    0.000    0.000    0.000    0.000 UWG/param.py:6(__init__)
+        1    0.000    0.000    0.000    0.000 /usr/lib/python2.7/logging/__init__.py:694(createLock)
+        1    0.000    0.000    0.000    0.000 /usr/lib/python2.7/logging/__init__.py:646(_addHandlerRef)
+       21    0.000    0.000    0.000    0.000 UWG/material.py:11(__init__)
+        1    0.000    0.000    0.000    0.000 /usr/lib/python2.7/threading.py:114(RLock)
+        1    0.000    0.000    0.000    0.000 /usr/lib/python2.7/logging/__init__.py:1298(addHandler)
+        3    0.000    0.000    0.000    0.000 {_csv.reader}
+        4    0.000    0.000    0.000    0.000 /usr/lib/python2.7/logging/__init__.py:177(_checkLevel)
+        1    0.000    0.000    0.000    0.000 /usr/lib/python2.7/threading.py:132(__init__)
+        2    0.000    0.000    0.000    0.000 {round}
+        4    0.000    0.000    0.000    0.000 /usr/lib/python2.7/logging/__init__.py:587(__init__)
+        6    0.000    0.000    0.000    0.000 {method 'rfind' of 'str' objects}
+        5    0.000    0.000    0.000    0.000 {method 'get' of 'dictproxy' objects}
+       12    0.000    0.000    0.000    0.000 {method 'startswith' of 'str' objects}
+        2    0.000    0.000    0.000    0.000 /usr/lib/python2.7/logging/__init__.py:976(append)
+       13    0.000    0.000    0.000    0.000 {method 'endswith' of 'str' objects}
+        1    0.000    0.000    0.000    0.000 /usr/lib/python2.7/threading.py:59(__init__)
+        1    0.000    0.000    0.000    0.000 {method 'strip' of 'str' objects}
+       31    0.000    0.000    0.000    0.000 /usr/lib/python2.7/copy.py:198(_deepcopy_atomic)
+       32    0.000    0.000    0.000    0.000 UWG/element.py:47(<lambda>)
+        1    0.000    0.000    0.000    0.000 {method 'lower' of 'str' objects}
+       32    0.000    0.000    0.000    0.000 UWG/element.py:48(<lambda>)
+        1    0.000    0.000    0.000    0.000 {method 'disable' of '_lsprof.Profiler' objects}
+        1    0.000    0.000    0.000    0.000 {thread.allocate_lock}
+        1    0.000    0.000    0.000    0.000 {method 'iteritems' of 'dict' objects}
+       10    0.000    0.000    0.000    0.000 UWG/UWG.py:492(<lambda>)
+        1    0.000    0.000    0.000    0.000 /usr/lib/python2.7/logging/__init__.py:764(setFormatter)
+        1    0.000    0.000    0.000    0.000 /usr/lib/python2.7/logging/__init__.py:391(__init__)
+        1    0.000    0.000    0.000    0.000 /usr/lib/python2.7/logging/__init__.py:969(__init__)
+       10    0.000    0.000    0.000    0.000 UWG/UWG.py:493(<lambda>)
+        1    0.000    0.000    0.000    0.000 {issubclass}
+
+
+
