@@ -2,6 +2,24 @@
 
 [![Build Status](https://travis-ci.org/ladybug-tools/urbanWeatherGen.svg?branch=master)](https://travis-ci.org/ladybug-tools/urbanWeatherGen)
 
+This is a modified version from [python version of urban weather generator](https://github.com/ladybug-tools/urbanWeatherGen), which is also a Python translation of the original [MATLAB Urban Weather Generator](https://github.com/hansukyang/UWG_Matlab).
+
+Profiling Performance
+---
+
+We added profiling information under `profile_info`.
+
+|Entry|Meaning|
+|---|---|
+|ncalls|for the number of calls|
+|tottime|    for the total time spent in the given function (and excluding time made in calls to sub-functions)|
+|percall|    is the quotient of tottime divided by ncalls|
+|cumtime|    is the cumulative time spent in this and all subfunctions (from invocation till exit). This figure is accurate even for recursive functions|
+|percall|    is the quotient of cumtime divided by primitive calls|
+
+Introduction
+---
+
 The Urban Weather Generator (urbanWeatherGen) is a Python application for modeling the [urban heat island effect](https://en.wikipedia.org/wiki/Urban_heat_island). Specifically, it morphs rural [EnergyPlus weather (.epw) files](http://www.ladybug.tools/epwmap/) to reflect average conditions within the urban canyon using a range of properties including:
 
 * Building geometry (including building height, ground coverage, window:wall area, and facade:site area)
@@ -15,7 +33,6 @@ The Urban Weather Generator (urbanWeatherGen) is a Python application for modeli
 
 The [original Urban Weather Generator](http://urbanmicroclimate.scripts.mit.edu/uwg.php) was developed by Bruno Bueno for [his PhD thesis at MIT](https://dspace.mit.edu/handle/1721.1/59107).  Since this time, it has been validated 3 times and has been [enhanced by Aiko Nakano](https://dspace.mit.edu/handle/1721.1/108779).  In 2016, Joseph Yang also [improved the engine and added a range of building templates](https://dspace.mit.edu/handle/1721.1/107347).
 
-This repository is a Python translation of the original [MATLAB Urban Weather Generator](https://github.com/hansukyang/UWG_Matlab).
 
 # Example
 Here is a Python example that shows how to create and run an Urban Weather Generator object. The example script is available [at resources/uwg_example.py](https://github.com/ladybug-tools/urbanWeatherGen/blob/master/resources/uwg_example.py). Run it through your command prompt in the main urbanWeatherGen directory with the following: ```python -m resources.uwg_example```
